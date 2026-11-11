@@ -1,0 +1,162 @@
+{
+  "last_node_id": 2,
+  "last_link_id": 1,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "AnimaLoRABatchTester",
+      "pos": [
+        80,
+        80
+      ],
+      "size": [
+        520,
+        640
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            1
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "AnimaLoRABatchTester"
+      },
+      "widgets_values": [
+        "anima_baseV10.safetensors",
+        "qwen_3_06b_base.safetensors",
+        "qwen_image_vae.safetensors",
+        "stable_diffusion",
+        "@style, painterly anime illustration, loose brushwork with soft blended edges, film grain and canvas texture, half body portrait, blue beret, navy qipao with gold frog buttons, long hair, blue eyes, soft rim light, muted warm palette, detailed face, clean linework, subtle bloom, medium shot",
+        "lowres, (bad quality, worst quality:1.2), long neck, bad anatomy, watermark, sketch, jpeg artifacts, ugly, poorly drawn, (censor), text, logo, nsfw, bad hands, fewer digits, extra digits, missing limbs",
+        3,
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "",
+        0.8,
+        1.0,
+        true,
+        "euler",
+        "simple",
+        30,
+        4.0,
+        1024,
+        1536,
+        "Anima-LoRA-batch",
+        "webp",
+        123456789
+      ],
+      "widgets_values_named": {
+        "unet_name": "anima_baseV10.safetensors",
+        "clip_name": "qwen_3_06b_base.safetensors",
+        "vae_name": "qwen_image_vae.safetensors",
+        "clip_type": "stable_diffusion",
+        "正面提示词 positive": "@style, painterly anime illustration, loose brushwork with soft blended edges, film grain and canvas texture, half body portrait, blue beret, navy qipao with gold frog buttons, long hair, blue eyes, soft rim light, muted warm palette, detailed face, clean linework, subtle bloom, medium shot",
+        "负面提示词 negative": "lowres, (bad quality, worst quality:1.2), long neck, bad anatomy, watermark, sketch, jpeg artifacts, ugly, poorly drawn, (censor), text, logo, nsfw, bad hands, fewer digits, extra digits, missing limbs",
+        "lora_count": 3,
+        "lora_1": "None",
+        "lora_2": "None",
+        "lora_3": "None",
+        "lora_4": "None",
+        "lora_5": "None",
+        "lora_6": "None",
+        "lora_7": "None",
+        "lora_8": "None",
+        "lora_9": "None",
+        "lora_10": "None",
+        "lora_11": "None",
+        "lora_12": "None",
+        "lora_13": "None",
+        "lora_14": "None",
+        "lora_15": "None",
+        "lora_16": "None",
+        "lora_17": "None",
+        "lora_18": "None",
+        "lora_19": "None",
+        "lora_20": "None",
+        "extra_loras": "",
+        "default_model_strength": 0.8,
+        "default_clip_strength": 1.0,
+        "include_none": true,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "steps": 30,
+        "cfg": 4.0,
+        "width": 1024,
+        "height": 1536,
+        "output_prefix": "Anima-LoRA-batch",
+        "image_format": "webp",
+        "seed": 123456789
+      }
+    },
+    {
+      "id": 2,
+      "type": "SaveImage",
+      "pos": [
+        660,
+        120
+      ],
+      "size": [
+        520,
+        480
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "Anima-LoRA-batch"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}

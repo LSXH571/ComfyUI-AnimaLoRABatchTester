@@ -1,0 +1,3 @@
+# 本节点不依赖额外 pip 包。
+# torch / Pillow / comfy / folder_paths 均由 ComfyUI 自带环境提供。
+# 请勿在此写死 torch 版本，会污染用户环境。
