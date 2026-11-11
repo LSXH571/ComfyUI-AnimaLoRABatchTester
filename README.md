@@ -87,5 +87,3 @@ ComfyUI-AnimaLoRABatchTester/
 ├── LICENSE
 └── requirements.txt
 ```
-
-> （注：部分内容由豆包 AI 生成）
