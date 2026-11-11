@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+output/
+manifest.json
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.onnx
+.DS_Store
+Thumbs.db
